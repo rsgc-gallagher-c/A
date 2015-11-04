@@ -8,4 +8,4 @@ size(200, 300);
 fill(5,5,5);
 
 //Make player (triangle) 
-triangle(30,40,50,10,10,10);
+triangle(95,260, 100,270, 90,270);
