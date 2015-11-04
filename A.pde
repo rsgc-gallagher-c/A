@@ -41,14 +41,14 @@ void keyPressed() {
 
   if (key == 'a') {
     print("a was pressed");
-    t= t-5;
-    r= r-5;
-    l= l-5;
+    s1= t-5;
+    s1= r-5;
+    s1= l-5;
   }
   if (key == 'd') {
     print("d was pressed");
-    t= t+5;
-    r= r+5;
-    l= l+5;
+    s1= t+5;
+    s1= r+5;
+    s1= l+5;
   }
 }
