@@ -30,7 +30,9 @@ void draw() {
 void keyPressed() {
 
   if (key == 'a') {
+    print("a was pressed");
   }
   if (key == 'd') {
+    print("d was pressed");
   }
 }
