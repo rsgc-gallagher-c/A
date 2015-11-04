@@ -5,8 +5,7 @@
 float t; //top of triangle 
 float r; //right of triangle 
 float l; // left of triangle 
-float s1; //speed of the triangle 
-float a1; //acceleration of the triangle 
+//float s1; //speed of the triangle 
 
 void setup() {
 
@@ -17,10 +16,15 @@ void setup() {
   t = 100; 
   r = 108;
   l = 92;
-  s1 = 
+  //s1 = 
+
 }
 
 void draw() {
+ 
+  // background clears each time the program loops
+  background(255);
+  
   //Make the colour of the player (triangle) 
   fill(5, 5, 5);
 
@@ -33,8 +37,14 @@ void keyPressed() {
 
   if (key == 'a') {
     print("a was pressed");
+    t= t-5;
+    r= r-5;
+    l= l-5;
   }
   if (key == 'd') {
     print("d was pressed");
+    t= t+5;
+    r= r+5;
+    l= l+5;
   }
 }
