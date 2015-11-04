@@ -5,7 +5,8 @@
 float t; //top of triangle 
 float r; //right of triangle 
 float l; // left of triangle 
-
+float s1; //speed of the triangle 
+float a1; //acceleration of the triangle 
 
 void setup() {
 
@@ -16,6 +17,7 @@ void setup() {
   t = 100; 
   r = 108;
   l = 92;
+  s1 = 
 }
 
 void draw() {
