@@ -34,6 +34,13 @@ void draw() {
   t = t-s1;
   r = r-s1;
   l = l-s1;
+  
+  //Left side line
+  line(80, 280, 80, 100);
+  
+  //Right side line 
+  line( 120, 280, 120, 100);
+  
 }
 
 //respond to key pressed 
