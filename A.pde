@@ -29,11 +29,11 @@ void draw() {
 
   //Make player (triangle) 
   triangle(t, 270, r, 280, l, 280);
-  
+
+  // Move the player 
   t = t-s1;
   r = r-s1;
   l = l-s1;
-  
 }
 
 //respond to key pressed 
@@ -42,15 +42,13 @@ void keyPressed() {
   if (key == 'a') {
     print("a was pressed");
     s1= -1;
-    s1= -1;
-    s1= -1;
   }
   if (key == 'd') {
     print("d was pressed");
     s1= +1;
-    s1= +1;
-    s1= +1;
   }
-  
-  //void keyReleased() {
+}
+
+void keyReleased() {
+  s1 = 0;
 }
