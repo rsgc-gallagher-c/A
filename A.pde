@@ -1,9 +1,9 @@
 //Carlyle Gallagher 
 //Game Project 
 
-
-
 Player P1; //makes new player 
+Walls LW;  //makes left wall 
+Walls RW;  //makes right wall 
 
 void setup() {
 
@@ -11,6 +11,8 @@ void setup() {
   size(200, 300);
 
   P1 = new Player (100, 108, 92);
+  LW = new Walls  line(80, 280, 80, 100); 
+  RW = new Walls  line( 120, 280, 120, 100);
 }
 
 void draw() {
@@ -19,12 +21,8 @@ void draw() {
   background(255);
 
   P1.update();
-
-  //Left side line
-  line(80, 280, 80, 100);
-
-  //Right side line 
-  line( 120, 280, 120, 100);
+  LW.update();
+  RW.update();
 }
 
 //respond to key pressed 
@@ -41,5 +39,5 @@ void keyPressed() {
 }
 
 void keyReleased() {
- P1.sets1 (0);
+  P1.sets1 (0);
 }

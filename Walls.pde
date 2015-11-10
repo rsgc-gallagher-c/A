@@ -5,7 +5,7 @@
   
 
   //constructor (like setup - runs once)
-  Player (float LW_, float RW_) {
+  Walls (float LW_, float RW_) {
     LW = LW_;
     RW = RW_;
   
