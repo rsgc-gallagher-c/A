@@ -28,18 +28,19 @@ class Player {
     l = l-s1;
 
 
-//    //end game 
-//    if (l>80) {
-//      textSize(80);
-//      text("GAME OVER", 285, 100);
-//      noLoop();
+    //end game 
+    if (l==80) {
+      textSize(20);
+      text("GAME OVER", 10, 30);
+      noLoop();
+    }
 
-//      if (r>120) {
-//        textSize(80);
-//        text("GAME OVER", 285, 100);
-//        noLoop();
-//      }
-//    }
+
+    if (r==120) {
+      textSize(20);
+      text("GAME OVER", 10, 30);
+      noLoop();
+    }
   }
   //moving the player with the keys 
   void sets1(float newS1_) {

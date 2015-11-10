@@ -41,5 +41,5 @@ void keyPressed() {
 }
 
 void keyReleased() {
- //P1.sets1 (0);
+ P1.sets1 (0);
 }
