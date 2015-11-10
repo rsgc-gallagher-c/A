@@ -1,58 +1,45 @@
 //Carlyle Gallagher 
 //Game Project 
 
-//global variables 
-float s1; //speed of the triangle 
 
 
-    void setup() {
+Player P1; //makes new player 
 
-      //Make canvas 
-      size(200, 300);
+void setup() {
 
-      //define a,b,c
-      t = 100; 
-      r = 108;
-      l = 92;
-      s1 = 0;
-    }
+  //Make canvas 
+  size(200, 300);
 
-    void draw() {
+  P1 = new Player (100, 108, 92);
+}
 
-      // background clears each time the program loops
-      background(255);
+void draw() {
 
-      //Make the colour of the player (triangle) 
-      fill(5, 5, 5);
+  // background clears each time the program loops
+  background(255);
 
-      //Make player (triangle) 
-      triangle(t, 270, r, 280, l, 280);
+  P1.update();
 
-      // Move the player 
-      t = t-s1;
-      r = r-s1;
-      l = l-s1;
+  //Left side line
+  line(80, 280, 80, 100);
 
-      //Left side line
-      line(80, 280, 80, 100);
+  //Right side line 
+  line( 120, 280, 120, 100);
+}
 
-      //Right side line 
-      line( 120, 280, 120, 100);
-    }
+//respond to key pressed 
+void keyPressed() {
 
-    //respond to key pressed 
-    void keyPressed() {
+  if (key == 'a') {
+    print("a was pressed");
+    P1.sets1 (+1);
+  }
+  if (key == 'd') {
+    print("d was pressed");
+    P1.sets1 (-1);
+  }
+}
 
-      if (key == 'a') {
-        print("a was pressed");
-        s1= +1;
-      }
-      if (key == 'd') {
-        print("d was pressed");
-        s1= -1;
-      }
-    }
-
-    void keyReleased() {
-      s1 = 0;
-    }
+void keyReleased() {
+  P1.sets1 (0);
+}
