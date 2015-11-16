@@ -2,8 +2,6 @@
 //Game Project 
 
 Player P1; //makes new player 
-Walls LW;  //makes left wall 
-Walls RW;  //makes right wall 
 
 void setup() {
 
@@ -11,8 +9,6 @@ void setup() {
   size(200, 300);
 
   P1 = new Player (100, 108, 92);
-  LW = new Walls  line(80, 280, 80, 100); 
-  RW = new Walls  line( 120, 280, 120, 100);
 }
 
 void draw() {
@@ -21,8 +17,10 @@ void draw() {
   background(255);
 
   P1.update();
-  LW.update();
-  RW.update();
+
+  //Create walls 
+  line(80, 280, 80, 100); 
+  line( 120, 280, 120, 100);
 }
 
 //respond to key pressed 
