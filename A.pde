@@ -2,12 +2,31 @@
 //Game Project 
 
 Player P1; //makes new player 
+float oldX;  // starting X of current segment
+float oldY;  // starting Y of current segment
+float newX;  // ending X of current segment
+float newY;  // ending Y of current segment
+
+float xChange;  // change for horizontal
+float yChange;  // change for horizontal
 
 void setup() {
 
   //Make canvas 
   size(200, 300);
 
+  // initial starting point for wall
+  oldX = 0;
+  oldY = 100;
+
+  // initial ending point for wall
+  newX = 150;
+  newY = 100;
+
+  // slow it down
+  frameRate(1);
+
+  //Create new player
   P1 = new Player (100, 108, 92);
 }
 
